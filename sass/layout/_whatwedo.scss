@@ -1,3 +1,11 @@
+.whatwedo {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .whatwedo {
+    display: block;
+  }
+}
 .whatwedo-menu {
   display: flex;
   flex-wrap: wrap;
