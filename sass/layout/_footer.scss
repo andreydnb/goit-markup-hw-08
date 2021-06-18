@@ -3,6 +3,17 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.footer-adress-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
 .footer-logo-link {
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -14,14 +25,15 @@
   margin-bottom: 20px;
 }
 .adress-menu {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .adress-menu-item {
   &:not(:last-child) {
     margin-bottom: 9px;
   }
 }
-
 .adress-menu-link-adress {
   font-style: normal;
   line-height: 1.71;
@@ -42,6 +54,9 @@
     color: var(--accent-color);
   }
 }
+.footer-social-container {
+  margin-bottom: 60px;
+}
 .footer-social-title,
 .footer-modal-title {
   font-weight: 700;
@@ -50,11 +65,7 @@
   text-transform: uppercase;
   color: var(--main-background-color);
   margin-bottom: 20px;
-}
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
+  text-align: center;
 }
 
 .footer-link {
@@ -63,12 +74,15 @@
     margin-right: 10px;
   }
 }
+.footer-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .footer-icon {
   fill: var(--main-background-color);
 }
-.footer-social-container {
-  margin-right: 93px;
-}
+
 .footer-modal-title {
   margin-bottom: 20px;
 }
@@ -77,7 +91,7 @@
   align-items: center;
   justify-content: center;
   height: 50px;
-  width: 200px;
+  min-width: 200px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -89,16 +103,12 @@
   border-radius: 4px;
   border: none;
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: 0;
 
   &:hover,
   &:focus {
     background: var(--btn-hover-color);
   }
-}
-
-.footer-form {
-  display: flex;
-  flex-direction: column;
 }
 .email-form {
   height: 50px;
@@ -114,6 +124,7 @@
   border-radius: 4px;
   margin-right: 12px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 20px;
 
   &:focus {
     border-color: var(--accent-color);
@@ -128,15 +139,24 @@
   fill: var(--main-background-color);
 }
 @media screen and (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+  }
   .footer-adress-container {
     margin-right: 165px;
   }
 }
 @media screen and (min-width: 1200px) {
+  .footer-container {
+    flex-direction: row;
+  }
   .footer-adress-container {
     margin-right: 70px;
   }
   .footer-form {
     flex-direction: row;
+  }
+  .footer-social-container {
+    margin-right: 93px;
   }
 }

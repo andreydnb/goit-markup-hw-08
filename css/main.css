@@ -774,6 +774,19 @@ body {
   padding-bottom: 60px;
 }
 
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.footer-adress-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
 .footer-logo-link {
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -787,7 +800,9 @@ body {
 }
 
 .adress-menu {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .adress-menu-item:not(:last-child) {
@@ -816,6 +831,10 @@ body {
   color: var(--accent-color);
 }
 
+.footer-social-container {
+  margin-bottom: 60px;
+}
+
 .footer-social-title,
 .footer-modal-title {
   font-weight: 700;
@@ -824,12 +843,7 @@ body {
   text-transform: uppercase;
   color: var(--main-background-color);
   margin-bottom: 20px;
-}
-
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
+  text-align: center;
 }
 
 .footer-link {
@@ -840,12 +854,14 @@ body {
   margin-right: 10px;
 }
 
-.footer-icon {
-  fill: var(--main-background-color);
+.footer-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.footer-social-container {
-  margin-right: 93px;
+.footer-icon {
+  fill: var(--main-background-color);
 }
 
 .footer-modal-title {
@@ -857,7 +873,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 50px;
-  width: 200px;
+  min-width: 200px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -869,15 +885,11 @@ body {
   border-radius: 4px;
   border: none;
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: 0;
 }
 
 .footer-submit-btn:hover, .footer-submit-btn:focus {
   background: var(--btn-hover-color);
-}
-
-.footer-form {
-  display: flex;
-  flex-direction: column;
 }
 
 .email-form {
@@ -894,6 +906,7 @@ body {
   border-radius: 4px;
   margin-right: 12px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 20px;
 }
 
 .email-form:focus {
@@ -909,17 +922,26 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+  }
   .footer-adress-container {
     margin-right: 165px;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .footer-container {
+    flex-direction: row;
+  }
   .footer-adress-container {
     margin-right: 70px;
   }
   .footer-form {
     flex-direction: row;
+  }
+  .footer-social-container {
+    margin-right: 93px;
   }
 }
 
