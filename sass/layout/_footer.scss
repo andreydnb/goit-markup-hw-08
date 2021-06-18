@@ -112,7 +112,7 @@
 }
 .email-form {
   height: 50px;
-  width: 358px;
+  width: 450px;
   font-size: 16px;
   line-height: 1.25;
   background-color: inherit;
@@ -172,6 +172,9 @@
   .footer-social-title,
   .footer-modal-title {
     text-align: left;
+  }
+  .email-form {
+    width: 358px;
   }
   .footer-form-container {
     align-items: flex-start;

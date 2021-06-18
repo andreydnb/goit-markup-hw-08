@@ -1,7 +1,7 @@
 .modal-title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -94,10 +94,20 @@
   }
 }
 .checkbox-text {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   color: var(--secondary-text-color);
 }
 .contract-link {
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-title {
+    line-height: 1.15;
+  }
+  .checkbox-text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
