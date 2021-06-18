@@ -1,7 +1,6 @@
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  max-width: 1600px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--alt-background-color);
@@ -9,7 +8,7 @@
       var(--overlay-hero-bg-color),
       var(--overlay-hero-bg-color)
     ),
-    url(../images/hero/bg.jpg);
+    url("../images/hero/bg-mob.jpg");
   background-size: cover;
 }
 .hero__container {
@@ -19,17 +18,20 @@
 }
 .hero__title {
   margin: 0 auto 30px;
-  width: 696px;
+  max-width: 360px;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   text-align: center;
-  line-height: 1.36;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-background-color);
 }
 
 .modal-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -46,5 +48,69 @@
   &:hover,
   &:focus {
     background: var(--btn-hover-color);
+  }
+}
+@media (min-device-pixel-ratio: 2) and (max-width: 767px),
+  (min-resolution: 192dpi) and (max-width: 767px),
+  (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(
+        var(--overlay-hero-bg-color),
+        var(--overlay-hero-bg-color)
+      ),
+      url("../images/hero/bg-mob@2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        var(--overlay-hero-bg-color),
+        var(--overlay-hero-bg-color)
+      ),
+      url("../images/hero/bg-tabl.jpg");
+  }
+}
+
+/* 2x и 768+ */
+@media (min-device-pixel-ratio: 2) and (min-width: 768px),
+  (min-resolution: 192dpi) and (min-width: 768px),
+  (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        var(--overlay-hero-bg-color),
+        var(--overlay-hero-bg-color)
+      ),
+      url("../images/hero/bg-tabl@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(
+        var(--overlay-hero-bg-color),
+        var(--overlay-hero-bg-color)
+      ),
+      url("../images/hero/bg-deskt.jpg");
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+  }
+  .hero__title {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+/* 2x и 1200+ */
+@media (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  (min-resolution: 192dpi) and (min-width: 1200px),
+  (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(
+        var(--overlay-hero-bg-color),
+        var(--overlay-hero-bg-color)
+      ),
+      url("../images/hero/bg-deskt@2x.jpg");
   }
 }
