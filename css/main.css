@@ -924,6 +924,7 @@ body {
 @media screen and (min-width: 768px) {
   .footer-container {
     flex-direction: row;
+    justify-content: center;
   }
   .footer-adress-container {
     margin-right: 165px;
@@ -932,16 +933,26 @@ body {
 
 @media screen and (min-width: 1200px) {
   .footer-container {
-    flex-direction: row;
+    justify-content: left;
+    align-items: baseline;
   }
   .footer-adress-container {
     margin-right: 70px;
+    align-items: flex-start;
+    margin-bottom: 0;
   }
-  .footer-form {
-    flex-direction: row;
+  .adress-menu {
+    align-items: flex-start;
   }
   .footer-social-container {
     margin-right: 93px;
+  }
+  .footer-social-title,
+  .footer-modal-title {
+    text-align: left;
+  }
+  .footer-form-container {
+    align-items: flex-start;
   }
 }
 
