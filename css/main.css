@@ -139,7 +139,6 @@ body {
   .mob-menu__list-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
   }
   .mob-menu__close-btn {
     position: absolute;
@@ -165,7 +164,7 @@ body {
     color: var(--accent-color);
   }
   .mob-menu__contact-container {
-    margin-top: auto;
+    margin-top: 100%;
   }
   .mob-menu__contact {
     margin-bottom: 64px;

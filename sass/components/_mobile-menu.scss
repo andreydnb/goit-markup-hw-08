@@ -23,7 +23,6 @@
     &__list-container {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
     }
     &__close-btn {
       position: absolute;
@@ -53,7 +52,7 @@
       }
     }
     &__contact-container {
-      margin-top: auto;
+      margin-top: 100%;
     }
     &__contact {
       margin-bottom: 64px;
