@@ -23,6 +23,8 @@
     &__list-container {
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
     }
     &__close-btn {
       position: absolute;
@@ -50,9 +52,6 @@
       &:hover {
         color: var(--accent-color);
       }
-    }
-    &__contact-container {
-      margin-top: 100%;
     }
     &__contact {
       margin-bottom: 64px;
