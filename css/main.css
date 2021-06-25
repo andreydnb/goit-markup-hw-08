@@ -126,12 +126,20 @@ body {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    z-index: 9999;
   }
   .mob-menu__container {
+    width: 100%;
+    height: auto;
     position: relative;
     padding-top: 48px;
     padding-bottom: 48px;
     padding-left: 25px;
+  }
+  .mob-menu__list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .mob-menu__close-btn {
     position: absolute;
@@ -156,9 +164,6 @@ body {
   .mob-menu__link:focus, .mob-menu__link:hover {
     color: var(--accent-color);
   }
-  .mob-menu__nav {
-    margin-bottom: 306px;
-  }
   .mob-menu__contact {
     margin-bottom: 64px;
   }
@@ -171,6 +176,7 @@ body {
   }
   .mob-menu__social {
     display: flex;
+    flex-wrap: wrap;
   }
   .mob-menu__social-item:not(:last-child) {
     margin-right: 20px;
@@ -1045,7 +1051,6 @@ body {
 
 .email-form {
   height: 50px;
-  width: 450px;
   font-size: 16px;
   line-height: 1.25;
   background-color: inherit;
@@ -1076,6 +1081,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media screen and (min-width: 480px) {
+  .email-form {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1123,12 +1134,13 @@ body {
 .portfolio-menu {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 50px;
-  justify-content: center;
+  margin-bottom: 25px;
+  justify-content: flex-start;
 }
 
 .portfolio-menu__item {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 .modal-btn-portfolio {
@@ -1152,11 +1164,38 @@ body {
   filter: drop-shadow(0px 4px 4px var(--modal-btn-shadow));
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio-menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  .portfolio-menu__item {
+    margin-right: 8px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+}
+
 .example-list {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
+}
+
+.example-menu-img {
+  max-width: 100%;
+  height: auto;
 }
 
 .border-example-menu {

@@ -10,12 +10,20 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    z-index: 9999;
 
     &__container {
+      width: 100%;
+      height: auto;
       position: relative;
       padding-top: 48px;
       padding-bottom: 48px;
       padding-left: 25px;
+    }
+    &__list-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
     &__close-btn {
       position: absolute;
@@ -44,9 +52,6 @@
         color: var(--accent-color);
       }
     }
-    &__nav {
-      margin-bottom: 306px;
-    }
     &__contact {
       margin-bottom: 64px;
     }
@@ -60,6 +65,7 @@
     }
     &__social {
       display: flex;
+      flex-wrap: wrap;
     }
     &__social-item {
       &:not(:last-child) {
