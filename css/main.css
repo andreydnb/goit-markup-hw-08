@@ -164,6 +164,9 @@ body {
   .mob-menu__link:focus, .mob-menu__link:hover {
     color: var(--accent-color);
   }
+  .mob-menu__contact-container {
+    margin-top: auto;
+  }
   .mob-menu__contact {
     margin-bottom: 64px;
   }
@@ -669,7 +672,8 @@ body {
 }
 
 .whyus-menu__item {
-  width: 450px;
+  width: 100%;
+  height: auto;
 }
 
 .whyus-menu__preimage {
@@ -698,6 +702,12 @@ body {
   line-height: 1.71;
   color: var(--secondary-text-color);
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .whyus-menu__item {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 768px) {
