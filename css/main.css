@@ -206,6 +206,17 @@ body {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .mob-menu__social-item {
+    margin-bottom: 30px;
+  }
+  .tel-link {
+    color: var(--accent-color);
+    font-size: 28px;
+    line-height: 1.18;
+  }
+}
+
 .section-title {
   font-weight: 700;
   font-size: 28px;
