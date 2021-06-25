@@ -50,9 +50,9 @@
     background: var(--btn-hover-color);
   }
 }
-@media (min-device-pixel-ratio: 2) and (max-width: 767px),
-  (min-resolution: 192dpi) and (max-width: 767px),
-  (min-resolution: 2dppx) and (max-width: 767px) {
+@media (min-device-pixel-ratio: 2) and (min-width: 480px),
+  (min-resolution: 192dpi) and (min-width: 480px),
+  (min-resolution: 2dppx) and (min-width: 480px) {
   .hero {
     background-image: linear-gradient(
         var(--overlay-hero-bg-color),

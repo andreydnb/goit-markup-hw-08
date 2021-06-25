@@ -10,12 +10,12 @@
 }
 .border-example-menu {
   padding: 24px 20px;
-  border: 1px solid var(--border-example);
   box-sizing: border-box;
 }
 .example-menu-item {
   margin-left: 30px;
   margin-top: 30px;
+  border: 1px solid var(--border-example);
 }
 .example-list-img-wrapper {
   position: relative;
