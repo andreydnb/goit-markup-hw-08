@@ -549,6 +549,7 @@ body {
   .menu-contact__link {
     position: relative;
     display: flex;
+    align-items: center;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
