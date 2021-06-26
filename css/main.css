@@ -606,6 +606,8 @@ body {
   background-color: var(--alt-background-color);
   background-image: linear-gradient(var(--overlay-hero-bg-color), var(--overlay-hero-bg-color)), url("../images/hero/bg-mob.webp"), url("../images/hero/bg-mob.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero__container {
@@ -648,19 +650,13 @@ body {
   background: var(--btn-hover-color);
 }
 
-@media screen and (min-width: 481px) {
-  .hero {
-    background-image: linear-gradient(var(--overlay-hero-bg-color), var(--overlay-hero-bg-color)), url("../images/hero/bg-mob@2x.jpg");
-  }
-}
-
 @media (min-device-pixel-ratio: 2) and (min-width: 320px), (min-resolution: 192dpi) and (min-width: 320px), (min-resolution: 2dppx) and (min-width: 320px) {
   .hero {
     background-image: linear-gradient(var(--overlay-hero-bg-color), var(--overlay-hero-bg-color)), url("../images/hero/bg-mob@2x.jpg");
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 481px) {
   .hero {
     background-image: linear-gradient(var(--overlay-hero-bg-color), var(--overlay-hero-bg-color)), url("../images/hero/bg-tabl.jpg");
   }
@@ -676,14 +672,6 @@ body {
 @media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(var(--overlay-hero-bg-color), var(--overlay-hero-bg-color)), url("../images/hero/bg-deskt.jpg");
-    padding-top: 200px;
-    padding-bottom: 200px;
-    max-width: 1600px;
-  }
-  .hero__title {
-    max-width: 696px;
-    font-size: 44px;
-    line-height: 1.36;
   }
 }
 
@@ -691,6 +679,19 @@ body {
 @media (min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(var(--overlay-hero-bg-color), var(--overlay-hero-bg-color)), url("../images/hero/bg-deskt@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
   }
 }
 
